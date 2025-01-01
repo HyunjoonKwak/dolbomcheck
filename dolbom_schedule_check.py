@@ -38,6 +38,7 @@ def fetch_school_address_and_link(school_name):
     params = {
         "address": school_name,
         "key": GEOCODING_API_KEY,
+        "language": "ko"  # 주소를 한국어로 반환하도록 설정
     }
     response = requests.get(google_url, params=params)
     if response.status_code == 200:
