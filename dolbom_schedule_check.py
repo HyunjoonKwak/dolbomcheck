@@ -28,8 +28,9 @@ headers = {
 }
 
 # Google Geocoding API 키 환경 변수에서 읽기
-import os
-GEOCODING_API_KEY = os.getenv("GEOCODING_API_KEY")
+# import os
+# GEOCODING_API_KEY = os.getenv("GEOCODING_API_KEY")
+GEOCODING_API_KEY= "AIzaSyDCq55eaWc2NpJcflRt13JjnNG9-IRPksA"
 
 # 학교 주소와 Google Maps 링크를 가져오는 함수
 def fetch_school_address_and_link(school_name):
