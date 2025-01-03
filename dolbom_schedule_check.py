@@ -127,7 +127,7 @@ def scheduled_task():
 scheduled_task()  # 처음 실행
 # schedule.every(5).minutes.do(scheduled_task)
 schedule.every().day.at("10:00").do(scheduled_task)  # 매일 10시에 실행
-
+schedule.every().day.at("17:00").do(scheduled_task)  # 매일 17시에 실행
 # 스케줄 실행
 if __name__ == "__main__":
     print("스케줄러 시작")
