@@ -80,8 +80,8 @@ refresh_button = st.sidebar.button("데이터 새로고침")
 
 # 새로고침 버튼 누르면 캐시된 데이터 clear
 if refresh_button:
-    st.experimental_rerun()
-
+    # st.experimental_rerun()
+    st.cache_data.clear()
 # 탭 구성
 tabs = st.tabs(["늘봄", "돌봄", "전래"])
 
