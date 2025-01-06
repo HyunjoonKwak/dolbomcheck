@@ -118,6 +118,7 @@ def update_csv(file_name, sch_val):
 # 5분마다 실행
 def scheduled_task():
     print("데이터 업데이트 시작")
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     update_csv("늘봄_data_with_links.csv", "늘봄")
     update_csv("돌봄_data_with_links.csv", "돌봄")
     update_csv("전래_data_with_links.csv", "전래")
